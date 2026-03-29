@@ -115,9 +115,9 @@
 									var imagePath = 'images/' + recipeBaseName + '.' + extension;
 									var testImg = new Image();
 									testImg.onload = function() {
-										// image found, display it
+										// image found, display it in image section before help
 										var imgHtml = '<img src="' + imagePath + '" alt="' + recipeBaseName + '" class="recipe-image">';
-										$('#title').prepend(imgHtml);
+										$('#image').html(imgHtml);
 									};
 									testImg.onerror = function() {
 										// image not found, continue silently
@@ -244,6 +244,7 @@
 		<section id="steps"></section>
 		<hr />
 		<section id="notes"></section>
+		<section id="image"></section>
 		<section id="help"></section>
 		<section id="basedon"></section>
 	</div>
