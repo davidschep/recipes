@@ -110,16 +110,20 @@
 							
 							// try to load and display recipe image
 							var imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
-							var imageFound = false;
 							for (var ext of imageExtensions) {
-								var imagePath = 'images/' + recipeBaseName + '.' + ext;
-								var testImg = new Image();
-								testImg.onload = function() {
-									// image found, display it
-									var imgHtml = '<img src="' + imagePath + '" alt="' + recipeBaseName + '" class="recipe-image">';
-									$('#title').prepend(imgHtml);
-								};
-								testImg.src = imagePath;
+								(function(extension) {
+									var imagePath = 'images/' + recipeBaseName + '.' + extension;
+									var testImg = new Image();
+									testImg.onload = function() {
+										// image found, display it
+										var imgHtml = '<img src="' + imagePath + '" alt="' + recipeBaseName + '" class="recipe-image">';
+										$('#title').prepend(imgHtml);
+									};
+									testImg.onerror = function() {
+										// image not found, continue silently
+									};
+									testImg.src = imagePath;
+								})(ext);
 							}
 						}
 						// for all others, get id from regex match
