@@ -9,7 +9,8 @@ Yogurt and white cheese with dried mint oil
 * Olive oil
 
 ## Steps
-1. ...
+1. Lightly toast the dried mint in olive oil.
+2. Mix oil with yogurt, white cheese, and dill.
 
 Tags:
   cold, meze, yogurt
