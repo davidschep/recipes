@@ -63,6 +63,7 @@
 			// extract which recipe from url anchor
 			var filename = window.location.hash;
 			filename = filename.replace('#', '');
+			var recipeBaseName = filename;
 			filename = 'recipes/' + filename + '.md';
 
 			// load the recipe
@@ -106,6 +107,20 @@
 							var elems = $(section);
 							var pageTitle = elems[0].innerHTML + ' | Recipe Book';
 							$(document).prop('title', pageTitle);
+							
+							// try to load and display recipe image
+							var imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+							var imageFound = false;
+							for (var ext of imageExtensions) {
+								var imagePath = 'images/' + recipeBaseName + '.' + ext;
+								var testImg = new Image();
+								testImg.onload = function() {
+									// image found, display it
+									var imgHtml = '<img src="' + imagePath + '" alt="' + recipeBaseName + '" class="recipe-image">';
+									$('#title').prepend(imgHtml);
+								};
+								testImg.src = imagePath;
+							}
 						}
 						// for all others, get id from regex match
 						else {
@@ -163,9 +178,7 @@
 					var html = '<h2>help!</h2>';
 					html += '<ul>';
 					html += '<li><a href="' + imageUrl + '" target="blank">Image search' + linkIcon + '</a></li>';
-					html += '<li><a href="' + seriousEatsUrl + '" target="blank">Serious Eats' + linkIcon + '</a></li>';
 					html += '<li><a href="' + googleUrl + '" target="blank">More recipes' + linkIcon + '</a></li>';
-					html += '<li><a href="' + yelpUrl + '" target="blank">Yelp (takeout pls)' + linkIcon + '</a></li>';
 					html += '</ul>';
 					$('#help').html(html);
 

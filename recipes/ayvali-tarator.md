@@ -7,7 +7,7 @@ Grated ayva apple with yogurt
 * Chopped Garlic
 * Cook in olive oil
 
-# Steps
+##  Steps
 Mix:
 1. Dill
 2. Yogurt
