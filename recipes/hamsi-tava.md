@@ -1,11 +1,13 @@
 # Hamsi tava
-(fried sardines)
+Fried sardines
 
-## Ingredients:
+## Ingredients
 * fresh anchovies
 * flour
 * oil
 
+## Steps
+1. ...
 
 Tags:
   fish, meze, warm

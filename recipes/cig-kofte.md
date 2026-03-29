@@ -1,7 +1,7 @@
 # Çiğ Köfte
-(bulgur meatballs)
+Bulgur meatballs
 
-## Ingredients:
+## Ingredients
 * Fine bulgur (2 cups)
 * Boiling water (2 cups)
 * Tomato paste (1 tbsp)
@@ -16,16 +16,20 @@
 * Salt (1+ tsp)
 * Lemon juice (1 lemon)
 
-## Serve with:
+## Variations
+* lentil kofte
+* Çiğ köfte with meat
+
+## Serve with
 * lavaş
 * iceberg lettuce
 * lemon
 * nar ekşisi
 * pickles
 
-## Alternatives:
-1. lentil kofte
-2. Çiğ köfte with meat
+## Steps
+1. Use foodprocessor
+2. ...
 
 Tags:
   cold, meze

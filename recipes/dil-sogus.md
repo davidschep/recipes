@@ -1,5 +1,5 @@
 # Dil söğüş
-(boiled tongue)
+Boiled tongue
 
 ## Ingredients:
 * beef/veal tongue

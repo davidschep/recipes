@@ -1,5 +1,5 @@
 # Atom
-(yogurt with chili butter)
+Yogurt with chili butter
 
 ## Ingredients:
 * Yogurt

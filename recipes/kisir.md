@@ -1,5 +1,11 @@
 # Kısır
-(bulgur salad)
+Bulgur salad
+
+## Ingredients
+* ...
+
+## Steps
+* ...
 
 Tags:
   cold, meze, salad

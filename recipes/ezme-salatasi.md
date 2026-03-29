@@ -1,5 +1,5 @@
 # Ezme salatası
-(grated tomato salad)
+Grated tomato salad)\
 
 ## Ingredients:
 * tomatoes

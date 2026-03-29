@@ -1,17 +1,21 @@
 # Ayvalı Tarator
+Grated ayva apple with yogurt
 
-Grates Ayva apple
-Grated Carrot
-Chopped Garlic
-Cook in olive oil
+## Ingredients
+* Grates Ayva apple
+* Grated Carrot
+* Chopped Garlic
+* Cook in olive oil
 
-Mix with:
-Dill
-Yogurt
+# Steps
+Mix:
+1. Dill
+2. Yogurt
+3. Carrot, garlic, and ayva
 
 On top:
-Walnuts cooked in olive oil
-Sesame
-Pul biber
-Salt
-Oregano
+1. Walnuts cooked in olive oil
+2. Sesame
+3. Pul biber
+4. Salt
+5. Oregano

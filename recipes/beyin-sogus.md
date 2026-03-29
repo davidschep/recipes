@@ -1,5 +1,5 @@
 # Beyin söğüş
-(boiled brain)
+Boiled brain
 
 ## Ingredients:
 * lamb brain

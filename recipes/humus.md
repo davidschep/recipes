@@ -1,10 +1,16 @@
-# Humus
-(Chickpea dish)
+# Hummus
+For a quick version, mix store bought with extra tahini and lemon juice.
 
-Either store bought (and made a little nicer with tahini and olive oil) or made from scratch
+## Ingredients
+* Tahini
+* Dried chickpeas soaked for 8 hours
+* Lemon juice
 
 ## Variations:
 * Add hot pastirma with oil on top
+
+## Steps
+1. ...
 
 Tags:
   cold, meze

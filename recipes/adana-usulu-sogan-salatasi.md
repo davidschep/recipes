@@ -1,5 +1,5 @@
 # Adana Usulü Soğan Salatası
-(red onion salad)
+Red onion salad
 
 ## Ingredients
 * red onion

@@ -1,11 +1,11 @@
 # Çacık
-(yogurt with grated cucumber)
+Yogurt with grated cucumber
 
 ## Ingredients:
-* yogurt
-* cucumber
-* mint
-* garlic
+* Yogurt
+* Cucumber
+* Dried mint
+* Garlic
 
 
 Tags:

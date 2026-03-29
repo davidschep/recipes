@@ -1,8 +1,10 @@
 # Albanian Pulapetka
+Yufka dough with chicken and walnuts.
 
 ## Ingredients
-Chicken
-Cooked yufka
+* Chicken
+* Toasted walnuts
+* Cooked yufka
 
 ## Steps
 1. ...

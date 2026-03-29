@@ -1,8 +1,12 @@
 # Labneli Nar Ekşili SOĞAN
+Cooked onions with labneh.
+
+## Ingredients
+* ...
 
 ## Steps
-* Cook big chunks of white onion with olive oil
-* Add walnuts
-* Add nar ekşisi 
-* Let cool
-* Mix with labneh
+1. Cook big chunks of white onion with olive oil
+2. Add walnuts
+3. Add nar ekşisi 
+4. Let cool
+5. Mix with labneh

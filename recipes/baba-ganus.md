@@ -1,5 +1,5 @@
 # Baba ganuş
-(Roasted eggplant dish)
+Roasted eggplant dish
 
 ## Ingredients
 * 2 or 3 eggplants
