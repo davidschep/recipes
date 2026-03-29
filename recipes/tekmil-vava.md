@@ -1,5 +1,5 @@
 # Tekmil vava
-(white vava bean dish)
+White vava bean dish
 
 ## Ingredients:
 * white beans
@@ -10,6 +10,8 @@
 * olive oil
 * sugar
 
+## Steps
+1. ...
 
 Tags:
   cold, meze

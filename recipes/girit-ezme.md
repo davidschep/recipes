@@ -1,7 +1,7 @@
 # Girit ezme
-(green cheese dish)
+Green cheese dish
 
-## Ingredients:
+## Ingredients
 * cheese
 * walnuts
 * pistachios
@@ -9,8 +9,11 @@
 * olive oil
 * cayenne
 * red bell pepper garnish
-* pesto
+* basil
 
+## Steps
+1. Mix basil and walnuts in food processor
+2. ...
 
 Tags:
   cold, meze

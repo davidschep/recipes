@@ -1,5 +1,5 @@
 # Arnavut ciğeri
-(fried liver)
+Fried liver
 
 ## Ingredients:
 * liver

@@ -1,5 +1,5 @@
 # Beyaz peynir ve kavun/karpuz
-(white cheese and melon)
+White cheese and melon
 
 Tags:
   cold, meze

@@ -1,5 +1,5 @@
 # Yoğurtlu biber ve patlıcan
-(roasted eggplant and pepper in yogurt)
+Roasted eggplant and pepper in yogurt.
 
 ## Ingredients:
 * eggplant
@@ -9,6 +9,8 @@
 * red pepper flakes
 * shoestring fries for garnish
 
+## Steps
+1. ...
 
 Tags:
   cold, meze, yogurt

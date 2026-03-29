@@ -1,12 +1,12 @@
 # Lakerda
-(cured tuna fish)
+Cured bonito fish
 
-## Ingredients:
+## Ingredients
 * bonito tuna
 * course salt
 * bay leave
 
-## Steps:
+## Steps
 1. marinate for 15 days
 2. keep for 30 days
 

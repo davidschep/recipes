@@ -115,6 +115,11 @@
 						// make any urls into links
 						section = linkify(section);
 						
+						// create section if it doesn't exist
+						if ($('#' + id).length === 0) {
+							$('#wrapper').append('<section id="' + id + '"></section>');
+						}
+						
 						// place the html inside its section
 						$('#' + id).html(section);
 					}
@@ -146,10 +151,8 @@
 					// add some links re the recipe
 					var recipeName = $('h1').text().toLowerCase();
 					recipeName = recipeName.replace(' ', '+');
-					var yelpUrl = 'https://www.yelp.com/search?find_desc=' + recipeName;
 					var googleUrl = 'https://www.google.com/search?q=' + recipeName + '+recipe';
 					var imageUrl = 'https://www.google.com/search?q=' + recipeName + '&tbm=isch';
-					var seriousEatsUrl = 'https://www.seriouseats.com/search?term=' + recipeName;
 
 					// link icon svg code
 					// via: https://fontawesome.com/icons/external-link-alt

@@ -1,7 +1,7 @@
 # Nar salatası 
-(Pomegranate salad)
+Pomegranate salad
 
-## Ingredients:
+## Ingredients
 * 1 pomegranate 
 * Parsley
 * Koriander
@@ -9,3 +9,6 @@
 * Olive oil
 * Nar eksisi
 * Onion
+
+## Steps
+1. ...

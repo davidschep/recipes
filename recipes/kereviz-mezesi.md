@@ -9,5 +9,8 @@
 * yogurt
 * garnish: pistachios, parsley, red pepper flakes, olive oil
 
-## Variations:
+## Variations
 * add grated green apple
+
+## Steps
+1. ...
