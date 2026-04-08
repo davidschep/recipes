@@ -44,7 +44,10 @@
 		// at the top
 		$(document).ready(async function() {
 			var files = await (await fetch("recipelist.json")).json();
-			files.sort();
+			var tagsData = await (await fetch("recipe-tags.json")).json();
+			var recipeTagsMap = tagsData.recipes;
+			var allTags = tagsData.allTags;
+			
 			var listOfRecipes = '';
 			var listOfLetters = '';
 			var prevLetter = '';
@@ -65,18 +68,66 @@
 				
 				var firstLetter = name.charAt(0).toUpperCase();
 				if (firstLetter != prevLetter) {
-					listOfRecipes += '<li id="' + firstLetter + '">';
+					listOfRecipes += '<li id="' + firstLetter + '" class="recipe-item" data-tags="' + (recipeTagsMap[anchor] ? recipeTagsMap[anchor].join(',') : '') + '">';
 					listOfLetters += '<a href="#' + firstLetter + '">' + firstLetter + ' </a>';
 				}
 				else {
-					listOfRecipes += '<li>';
+					listOfRecipes += '<li class="recipe-item" data-tags="' + (recipeTagsMap[anchor] ? recipeTagsMap[anchor].join(',') : '') + '">';
 				}
 				listOfRecipes += '<a href="recipe.html#' + anchor + '">' + name + '</a></li>';
 				prevLetter = firstLetter;
 			}
+			
+			// Create tag filter buttons
+			var tagFilters = '<div id="tag-filters"><strong>Filter by tag:</strong> ';
+			tagFilters += '<button class="tag-btn active" data-tag="all">All</button>';
+			for (var tag of allTags) {
+				tagFilters += '<button class="tag-btn" data-tag="' + tag + '">' + tag + '</button>';
+			}
+			tagFilters += '</div>';
+			
+			$('#toc').prepend(tagFilters);
 			$('#toc ul').html(listOfRecipes);
 			$('#navigation').html(listOfLetters);
+			
+			// Tag filter functionality
+			var selectedTags = new Set();
+			$('.tag-btn').click(function() {
+				var tag = $(this).data('tag');
+				if (tag === 'all') {
+					selectedTags.clear();
+					$('.tag-btn').removeClass('active');
+					$(this).addClass('active');
+				} else {
+					$('.tag-btn[data-tag="all"]').removeClass('active');
+					if ($(this).hasClass('active')) {
+						$(this).removeClass('active');
+						selectedTags.delete(tag);
+					} else {
+						$(this).addClass('active');
+						selectedTags.add(tag);
+					}
+				}
+				
+				// Filter recipes
+				$('.recipe-item').each(function() {
+					var recipeTags = $(this).data('tags').split(',').filter(t => t);
+					if (selectedTags.size === 0) {
+						$(this).show();
+					} else {
+						var hasMatch = false;
+						for (var selectedTag of selectedTags) {
+							if (recipeTags.includes(selectedTag)) {
+								hasMatch = true;
+								break;
+							}
+						}
+						$(this).toggle(hasMatch);
+					}
+				});
+			});
 		});
+	</script>
 	</script>
 </head>
 
