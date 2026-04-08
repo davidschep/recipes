@@ -10,3 +10,6 @@ Cooked onions with labneh.
 3. Add nar ekşisi 
 4. Let cool
 5. Mix with labneh
+
+Tags:
+  cold, meze

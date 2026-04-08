@@ -86,9 +86,9 @@
 			}
 			tagFilters += '</div>';
 			
-			$('#toc').prepend(tagFilters);
 			$('#toc ul').html(listOfRecipes);
 			$('#navigation').html(listOfLetters);
+			$('#navigation').after(tagFilters);
 			
 			// Tag filter functionality
 			var selectedTags = new Set();

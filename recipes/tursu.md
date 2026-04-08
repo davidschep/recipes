@@ -8,4 +8,4 @@ How to make turşu at home
 1. ..
 
 Tags:
-  cold, meze
+  cold
