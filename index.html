@@ -51,7 +51,18 @@
 			for (var i in files) {
 				var url = files[i];
 				var anchor = url.replace('.md', '');
-				var name = anchor.split('-').join(' ');
+				
+				// Fetch the recipe file and extract the first header
+				var name = anchor.split('-').join(' '); // fallback
+				try {
+					var recipeContent = await fetch('recipes/' + url).then(r => r.text());
+					var firstLine = recipeContent.split('\n')[0];
+					// Remove markdown heading markers (# symbols)
+					name = firstLine.replace(/^#+\s+/, '');
+				} catch (e) {
+					// Use filename-based name if fetch fails
+				}
+				
 				var firstLetter = name.charAt(0).toUpperCase();
 				if (firstLetter != prevLetter) {
 					listOfRecipes += '<li id="' + firstLetter + '">';

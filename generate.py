@@ -9,4 +9,6 @@ shutil.copy2("index.html", "build")
 shutil.copy2("recipe.html", "build")
 shutil.copy2("stylesheet.css", "build")
 f = open("build/recipelist.json", "w")
-f.write(json.dumps(os.listdir("recipes")))
+# Normalize all filenames to lowercase for consistency
+files = [f.lower() for f in os.listdir("recipes")]
+f.write(json.dumps(sorted(files)))
