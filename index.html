@@ -45,8 +45,10 @@
 		$(document).ready(async function() {
 			var files = await (await fetch("recipelist.json")).json();
 			var tagsData = await (await fetch("recipe-tags.json")).json();
+			var metadataData = await (await fetch("recipe-metadata.json")).json();
 			var recipeTagsMap = tagsData.recipes;
 			var allTags = tagsData.allTags;
+			var recipeTitles = metadataData.titles;
 			
 			var listOfRecipes = '';
 			var listOfLetters = '';
@@ -55,16 +57,8 @@
 				var url = files[i];
 				var anchor = url.replace('.md', '');
 				
-				// Fetch the recipe file and extract the first header
-				var name = anchor.split('-').join(' '); // fallback
-				try {
-					var recipeContent = await fetch('recipes/' + url).then(r => r.text());
-					var firstLine = recipeContent.split('\n')[0];
-					// Remove markdown heading markers (# symbols)
-					name = firstLine.replace(/^#+\s+/, '');
-				} catch (e) {
-					// Use filename-based name if fetch fails
-				}
+				// Get pre-extracted title from metadata
+				var name = recipeTitles[anchor] || anchor.split('-').join(' ');
 				
 				var firstLetter = name.charAt(0).toUpperCase();
 				if (firstLetter != prevLetter) {
