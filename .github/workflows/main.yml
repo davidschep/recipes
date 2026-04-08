@@ -31,6 +31,27 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
+
+      - name: Install WebP tools
+        run: sudo apt-get update && sudo apt-get install -y webp imagemagick
+
+      - name: Compress images to WebP
+        run: |
+          mkdir -p images/thumbnails
+          
+          # Process all image files
+          for img in images/*.{jpg,jpeg,png,gif}; do
+            if [ -f "$img" ]; then
+              filename=$(basename "$img")
+              name="${filename%.*}"
+              
+              # Create WebP versions
+              cwebp -q 85 "$img" -o "images/${name}.webp" || true
+              
+              # Create thumbnails (100x100) in WebP
+              convert "$img" -resize 100x100 -quality 85 "images/thumbnails/${name}-thumb.webp" || true
+            fi
+          done
         
       - name: Generate recipelist.json
         run: python3 generate.py
