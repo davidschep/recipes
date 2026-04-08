@@ -68,7 +68,10 @@
 				else {
 					listOfRecipes += '<li class="recipe-item" data-tags="' + (recipeTagsMap[anchor] ? recipeTagsMap[anchor].join(',') : '') + '">';
 				}
-				listOfRecipes += '<a href="recipe.html#' + anchor + '">' + name + '</a></li>';
+				// Add thumbnail image and recipe link
+				listOfRecipes += '<a href="recipe.html#' + anchor + '" class="recipe-link">';
+				listOfRecipes += '<img src="images/' + anchor + '-thumbnail.webp" alt="" class="recipe-thumb" onerror="this.style.display=\'none\'">';
+				listOfRecipes += '<span class="recipe-name">' + name + '</span></a></li>';
 				prevLetter = firstLetter;
 			}
 			
