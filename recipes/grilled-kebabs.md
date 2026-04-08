@@ -27,4 +27,4 @@ Ingredients:
 
 
 Tags:
-  bbq, meat, warm
+  bbq, meat, hot

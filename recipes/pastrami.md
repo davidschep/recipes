@@ -33,3 +33,6 @@ Homemade pastrami recipe.
 ## Originally:
 - 1/2 tsp (2.5g) Prague Powder #1 + 2 tbsp (30g) Kosher Salt
 - 183g nitrietzout total
+
+Tags:
+  meat

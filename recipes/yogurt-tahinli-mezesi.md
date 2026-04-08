@@ -13,3 +13,6 @@ Baba ganoush with yogurt.
 
 ## Variations
 * Add olive oil with red pepper flakes and crushed walnuts on top.
+
+Tags:
+  meze, cold, yogurt

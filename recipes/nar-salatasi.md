@@ -12,3 +12,6 @@ Pomegranate salad
 
 ## Steps
 1. ...
+
+Tags:
+  salad, cold

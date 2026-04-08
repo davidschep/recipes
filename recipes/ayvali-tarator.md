@@ -19,3 +19,6 @@ On top:
 3. Pul biber
 4. Salt
 5. Oregano
+
+Tags:
+  meze, cold, yogurt

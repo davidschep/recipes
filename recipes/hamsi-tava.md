@@ -10,4 +10,4 @@ Fried sardines
 1. ...
 
 Tags:
-  fish, meze, warm
+  fish, meze, hot

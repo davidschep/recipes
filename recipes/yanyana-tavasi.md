@@ -7,3 +7,6 @@ Roasted lamb cubes with veggies.
 
 # Steps
 1. ...
+
+Tags:
+  hot, meat
