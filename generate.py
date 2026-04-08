@@ -20,8 +20,9 @@ f = open("build/recipelist.json", "w")
 f.write(json.dumps(sorted_files))
 f.close()
 
-# Extract tags from each recipe
+# Extract titles and tags from each recipe
 recipe_tags = {}
+recipe_titles = {}
 all_tags = set()
 
 for filename in sorted_files:
@@ -38,6 +39,13 @@ for filename in sorted_files:
         try:
             with open(filepath, 'r', encoding='utf-8') as file:
                 content = file.read()
+                lines = content.split('\n')
+                
+                # Extract title (first line, remove markdown heading markers)
+                first_line = lines[0] if lines else ""
+                title = re.sub(r'^#+\s+', '', first_line).strip() if first_line else filename
+                recipe_titles[filename.replace('.md', '')] = title
+                
                 # Look for Tags: section
                 tag_match = re.search(r'Tags:\s*\n\s*(.+)', content)
                 if tag_match:
@@ -47,6 +55,13 @@ for filename in sorted_files:
                     all_tags.update(tags)
         except Exception as e:
             print(f"Error reading {filepath}: {e}")
+
+# Write metadata (titles and tags)
+metadata_file = open("build/recipe-metadata.json", "w")
+metadata_file.write(json.dumps({
+    "titles": recipe_titles
+}))
+metadata_file.close()
 
 # Write tags data
 tags_file = open("build/recipe-tags.json", "w")
