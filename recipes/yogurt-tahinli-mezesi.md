@@ -1,18 +1,19 @@
-# Yoğurtlu Tahinli Meze (Mütebbel)
-Baba ganoush with yogurt.
+# Mütebbel (baba ganuş with yogurt)
 
 ## Ingredients
-* Yogurt
-* Roasted eggplant
-* Tahin
+* 2 or 3 eggplants
+* Tahini
 * Lemon juice
-* Dille on top
+* Garnish: olive oil, fresh chili pepper
 
 ## Steps
-1. ...
+1. Roast eggplants on stove, and optionally finish in the oven
+2. Mix chopped eggplant insides with tahini, yogurt, and lemon juice
+3. Garnish
 
-## Variations
-* Add olive oil with red pepper flakes and crushed walnuts on top.
+## Alternatives
+* Pour over olive oil with toasted nuts and chili
+* Baba ganuş: without yogurt
 
 Tags:
-  meze, cold, yogurt
+  cold, meze, yogurt
