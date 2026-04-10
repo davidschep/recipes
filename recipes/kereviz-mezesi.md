@@ -1,19 +1,20 @@
-# Kereviz Mezesi
-(grated celeriac with yogurt)
+# Kereviz Mezesi (celeriac with yogurt)
 
 ## Ingredients
-* walnuts
-* celeriac
-* garlic
-* tahini
-* yogurt
-* garnish: pistachios, parsley, red pepper flakes, olive oil
+* Walnuts
+* Celeriac
+* Garlic
+* Tahini
+* Yogurt
+* Garnish: pistachios, parsley, red pepper flakes, olive oil
 
 ## Variations
-* add grated green apple
+* Add grated green apple
 
 ## Steps
-1. ...
+1. Grate celeriac and cook in olive oil
+2. Mix with yogurt and tahini
+3. Serve with garnish
 
 Tags:
   cold, meze, yogurt

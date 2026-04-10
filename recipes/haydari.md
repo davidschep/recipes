@@ -1,4 +1,4 @@
-# Haydari
+# Haydari (white cheese with mint)
 Yogurt and white cheese with dried mint oil
 
 ## Ingredients

@@ -2,23 +2,19 @@
 Grated ayva apple with yogurt
 
 ## Ingredients
-* Grates Ayva apple
-* Grated Carrot
+* Grated ayva apple
+* Grated carrot
+* Salt
 * Chopped Garlic
-* Cook in olive oil
+* Yogurt
 
 ##  Steps
-Mix:
-1. Dill
-2. Yogurt
-3. Carrot, garlic, and ayva
+1. Cook grated ayva and carrot in olive oil with salt
+2. Mix in crushed garlic
+3. Cool down and mix with yogurt
 
-On top:
-1. Walnuts cooked in olive oil
-2. Sesame
-3. Pul biber
-4. Salt
-5. Oregano
+## Variations
+* Toast walnuts and sesame seeds in olive oil, and add chili flakes and oregano, add on top
 
 Tags:
   meze, cold, yogurt
