@@ -49,6 +49,7 @@
 			var recipeTagsMap = tagsData.recipes;
 			var allTags = tagsData.allTags;
 			var recipeTitles = metadataData.titles;
+			var recipeSubtitles = metadataData.subtitles || {};
 			
 			var listOfRecipes = '';
 			var listOfLetters = '';
@@ -59,6 +60,7 @@
 				
 				// Get pre-extracted title from metadata
 				var name = recipeTitles[anchor] || anchor.split('-').join(' ');
+				var subtitle = recipeSubtitles[anchor] || '';
 				
 				var firstLetter = name.charAt(0).toUpperCase();
 				if (firstLetter != prevLetter) {
@@ -71,7 +73,11 @@
 				// Add thumbnail image and recipe link
 				listOfRecipes += '<a href="recipe.html#' + anchor + '" class="recipe-link">';
 				listOfRecipes += '<img src="images/' + anchor + '-thumbnail.webp" alt="" class="recipe-thumb" onerror="this.style.display=\'none\'">';
-				listOfRecipes += '<span class="recipe-name">' + name + '</span></a></li>';
+				listOfRecipes += '<span class="recipe-name">' + name;
+				if (subtitle) {
+					listOfRecipes += '<span class="recipe-subtitle">' + subtitle + '</span>';
+				}
+				listOfRecipes += '</span></a></li>';
 				prevLetter = firstLetter;
 			}
 			

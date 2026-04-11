@@ -1,4 +1,4 @@
-# Nar salatası 
+# Nar salatası (pomegranate salad)
 Pomegranate salad
 
 ## Ingredients

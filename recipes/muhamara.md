@@ -1,4 +1,4 @@
-# Muhamarra
+# Muhamarra (walnut tomato paste)
 Tomato paste with walnuts
 
 ## Ingredients

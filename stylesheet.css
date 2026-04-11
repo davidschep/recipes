@@ -143,6 +143,14 @@ ol li {
 	display: inline;
 }
 
+.recipe-subtitle {
+	display: block;
+	font-size: 0.75em;
+	color: #999;
+	font-weight: 400;
+	margin-top: 0.2em;
+}
+
 #navigation {
 	margin:       0.7em 0 2.6em 0;
 	line-height:  1.7em;
