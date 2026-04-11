@@ -7,6 +7,7 @@ For deployment, the GitHub Actions pipeline handles compression automatically.
 import os, json, shutil
 import re
 from PIL import Image
+from recipe_utils import extract_recipe_metadata
 
 if os.path.exists("build"):
     shutil.rmtree("build")
@@ -53,46 +54,14 @@ f = open("build/recipelist.json", "w")
 f.write(json.dumps(sorted_files))
 f.close()
 
-# Extract titles and tags from each recipe
-recipe_tags = {}
-recipe_titles = {}
-all_tags = set()
-
-for filename in sorted_files:
-    filepath = os.path.join("recipes", filename)
-    # Try to find the original file (it might have different casing)
-    if not os.path.exists(filepath):
-        # Find the file with case-insensitive match
-        for f in os.listdir("recipes"):
-            if f.lower() == filename:
-                filepath = os.path.join("recipes", f)
-                break
-    
-    if os.path.exists(filepath):
-        try:
-            with open(filepath, 'r', encoding='utf-8') as file:
-                content = file.read()
-                lines = content.split('\n')
-                
-                # Extract title (first line, remove markdown heading markers)
-                first_line = lines[0] if lines else ""
-                title = re.sub(r'^#+\s+', '', first_line).strip() if first_line else filename
-                recipe_titles[filename.replace('.md', '')] = title
-                
-                # Look for Tags: section
-                tag_match = re.search(r'Tags:\s*\n\s*(.+)', content)
-                if tag_match:
-                    tags_str = tag_match.group(1)
-                    tags = [tag.strip() for tag in tags_str.split(',')]
-                    recipe_tags[filename.replace('.md', '')] = tags
-                    all_tags.update(tags)
-        except Exception as e:
-            print(f"Error reading {filepath}: {e}")
+# Extract metadata using shared utility
+recipe_titles, recipe_subtitles, recipe_tags, all_tags = extract_recipe_metadata("recipes")
 
 # Write metadata (titles and tags)
 metadata_file = open("build/recipe-metadata.json", "w")
 metadata_file.write(json.dumps({
-    "titles": recipe_titles
+    "titles": recipe_titles,
+    "subtitles": recipe_subtitles
 }))
 metadata_file.close()
 
@@ -100,7 +69,7 @@ metadata_file.close()
 tags_file = open("build/recipe-tags.json", "w")
 tags_file.write(json.dumps({
     "recipes": recipe_tags,
-    "allTags": sorted(list(all_tags))
+    "allTags": all_tags
 }))
 tags_file.close()
 

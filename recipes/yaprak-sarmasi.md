@@ -1,4 +1,4 @@
-# Yaprak Sarması
+# Yaprak Sarması (grape leaf rolls)
 Filled grape leafes.
 
 ## Ingredients:

@@ -1,4 +1,4 @@
-# Tekmil fava
+# Tekmil fava (white bean dish)
 White fava bean dish
 
 ## Ingredients:
