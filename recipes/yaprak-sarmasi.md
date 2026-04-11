@@ -1,5 +1,5 @@
 # Yaprak Sarması
-Filled grape leaves.
+Filled grape leafes.
 
 ## Ingredients:
 * ...

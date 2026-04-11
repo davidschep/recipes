@@ -1,4 +1,4 @@
-# Çacık (yogurt with grated cucumber)
+# Cacık (yogurt with grated cucumber)
 
 ## Ingredients:
 * Yogurt

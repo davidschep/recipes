@@ -7,11 +7,12 @@ Pomegranate salad
 * Koriander
 * Walnuts
 * Olive oil
-* Nar eksisi
-* Onion
+* Nar eksisi (pomegranate molasses)
+* Onion or green onion
 
 ## Steps
-1. ...
+1. Chop all ingredients fine and combine
+2. Serve
 
 Tags:
   salad, cold
