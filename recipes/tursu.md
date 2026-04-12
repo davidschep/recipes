@@ -1,5 +1,5 @@
-# Turşu
-How to make turşu at home
+# Turşu (pickles)
+To be added...
 
 ## Ingredients
 * ..
