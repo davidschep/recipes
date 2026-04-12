@@ -12,17 +12,13 @@ shutil.copy2("index.html", "build")
 shutil.copy2("recipe.html", "build")
 shutil.copy2("stylesheet.css", "build")
 
-# Normalize all filenames to lowercase for consistency
-files = [f.lower() for f in os.listdir("recipes")]
-sorted_files = sorted(files)
+# Extract metadata using shared utility (returns files sorted by title)
+sorted_files, recipe_titles, recipe_subtitles, recipe_tags, all_tags = extract_recipe_metadata("recipes")
 
-# Write recipe list
+# Write recipe list (sorted by title)
 f = open("build/recipelist.json", "w")
 f.write(json.dumps(sorted_files))
 f.close()
-
-# Extract metadata using shared utility
-recipe_titles, recipe_subtitles, recipe_tags, all_tags = extract_recipe_metadata("recipes")
 
 # Write metadata (titles and tags)
 metadata_file = open("build/recipe-metadata.json", "w")

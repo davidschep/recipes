@@ -7,19 +7,21 @@ import re
 def extract_recipe_metadata(recipes_dir):
     """
     Extract titles, subtitles, and tags from recipe files.
+    Sorts files by their extracted titles.
     
-    Returns a tuple of (recipe_titles, recipe_subtitles, recipe_tags, all_tags)
+    Returns a tuple of (sorted_files, recipe_titles, recipe_subtitles, recipe_tags, all_tags)
+    where sorted_files is the list of filenames sorted by their titles.
     """
-    # Normalize all filenames to lowercase for consistency
+    # Get all recipe files (normalized to lowercase)
     files = [f.lower() for f in os.listdir(recipes_dir)]
-    sorted_files = sorted(files)
+    files = sorted(files)
     
     recipe_tags = {}
     recipe_titles = {}
     recipe_subtitles = {}
     all_tags = set()
     
-    for filename in sorted_files:
+    for filename in files:
         filepath = os.path.join(recipes_dir, filename)
         # Try to find the original file (it might have different casing)
         if not os.path.exists(filepath):
@@ -63,4 +65,10 @@ def extract_recipe_metadata(recipes_dir):
             except Exception as e:
                 print(f"Error reading {filepath}: {e}")
     
-    return recipe_titles, recipe_subtitles, recipe_tags, sorted(list(all_tags))
+    # Sort files by their titles (case-insensitive)
+    sorted_files = sorted(
+        [f.replace('.md', '') for f in files],
+        key=lambda anchor: recipe_titles.get(anchor, anchor).lower()
+    )
+    
+    return sorted_files, recipe_titles, recipe_subtitles, recipe_tags, sorted(list(all_tags))
