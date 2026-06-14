@@ -1,4 +1,4 @@
-# Grilled kebabs
+# Grilled kebabs (adana, liver, heart, chicken)
 Different kinds of kebab for the bbq.
 
 ## Adana kebab
@@ -14,7 +14,7 @@ Steps:
 2. Fold around flat skewer
 3. Grill on charcoal
 
-## Çiğer şiş
+## Çiğer şiş (liver)
 Ingredients:
 * Beef/lamb liver
 * Beef/lamb fat
@@ -38,7 +38,7 @@ Steps:
 2. Alternate between meat and fat pieces
 3. Grill on charcoal
 
-## Marinated chicken thigh şiş
+## Chicken thigh şiş
 Ingredients:
 * Chicken thigh
 * Biber salça (red pepper paste)

@@ -1,5 +1,4 @@
-# Kısır
-Bulgur salad
+# Kısır (bulgur salad)
 
 ## Ingredients
 * 2 cups fine bulgur

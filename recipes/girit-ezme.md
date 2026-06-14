@@ -1,5 +1,4 @@
-# Girit ezme
-Green cheese dish
+# Girit ezme (cheese, basil, and pistachios)
 
 ## Ingredients
 * White cheese (tulum / ezine / feta)

@@ -1,5 +1,4 @@
-# Ayvalı Tarator
-Grated ayva apple with yogurt
+# Ayvalı Tarator (grated ayva and carrot with yogurt)
 
 ## Ingredients
 * Grated ayva apple

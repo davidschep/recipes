@@ -1,4 +1,4 @@
-# Hummus
+# Hummus (chickpeas)
 For a quick version, mix store bought with extra tahini and lemon juice.
 
 ## Ingredients
