@@ -1,5 +1,4 @@
-# Pastrami or Boiled Beef
-Homemade pastrami recipe.
+# Pastrami or Boiled Beef (cured chuck/brisket)
 
 ## Ingredients (Per 1.5 kg Beef chuck/brisket):
 - 75g nitrietzout
